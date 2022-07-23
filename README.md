@@ -1,2 +1,2 @@
 # P.L.U.S-Website
-A minimalistic website for desktop wallpapers
+ A minimalistic website for desktop wallpapers

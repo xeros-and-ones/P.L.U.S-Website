@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>P.L.U.S</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="w3.css">
+  <style type="text/css">
+    div#main {max-width:1400px}
+  </style>
+
+</head>
+<body>
+
+  <!--Main div -->
+<div id="main" class="w3-content">
+      
+      <!--Top Bar-->
+      <div class="w3-container w3-light-grey w3-center">
+        <h1 class="w3-jumbo">P.L.U.S</h1>
+        <p>Premium Looking, Unforgettably Sufficient</p>
+      </div>
+      <!--Navigation Bar-->
+      <div class="w3-shadow w3-black">
+      <ul class="w3-navbar w3-center">
+        <li style="width:33.3333333%"><a class="w3-hover" href="random.html">Random</a></li>
+        <li style="width:33.3333333%"><a class="w3-hover" href="index.html">Home</a></li>
+         <li style="width:33.3333333%" class="w3-dropdown-hover">
+          <a href="#">Categories</a>
+            <div class="w3-dropdown-content w3-black w3-card-4" style="width:33.3333333%">
+                <a class="w3-hover-white" href="nature.html">Nature</a>
+                <a class="w3-hover-white" href="abstract.html">Abstract</a>
+                <a class="w3-hover-white" href="cars.html">Cars</a>
+                <a class="w3-hover-white" href="programming.html">Programming</a>
+                <a class="w3-hover-white" href="black&white.html">Black & White</a>
+                <a class="w3-hover-white" href="creative.html">creative</a>
+                <a class="w3-hover-white" href="photography.html">Photography</a>
+            </div>
+         </li>
+      </ul>
+      </div>
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-animate-right" style="display: none;">
+    <img src="images\4.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-animate-left" style="display: block;">
+    <img src="images\8.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-animate-right" style="display: none;">
+    <img src="images\6.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-animate-left" style="display: none;">
+    <img src="images\17.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-animate-right" style="display: none;">
+    <img src="images\19.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-animate-left" style="display: none;">
+    <img src="images\21.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-animate-right" style="display: none;">
+    <img src="images\23.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-animate-left" style="display: none;">
+    <img src="images\25.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-animate-right" style="display: none;">
+    <img src="images\29.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-animate-left" style="display: none;">
+    <img src="images\33.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-animate-right" style="display: none;">
+    <img src="images\31.jpg" style="width:100%">
+  </div>
+  <div class="mySlides w3-display-container w3-animate-left" style="display: none;">
+    <img src="images\38.jpg" style="width:100%">
+  </div>
+</div>
+
+
+ <!--Automatic Slideshow - change image every 4 seconds-->
+  <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+</script>
+
+
+
+
+</body>
+</html>
